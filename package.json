@@ -1,0 +1,19 @@
+{
+  "name": "demo-react-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomad302/demo-app-ts-react.git"
+  },
+  "author": "\"sagar\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nomad302/demo-app-ts-react/issues"
+  },
+  "homepage": "https://github.com/nomad302/demo-app-ts-react#readme"
+}
