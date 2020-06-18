@@ -1,0 +1,26 @@
+/*  - file in a root directory indicates that the directory is the root of a TypeScript project 
+    - The file specifies the root files and compiler options required to compile the project.
+  */
+{
+    "compilerOptions": {
+        "baseUrl": "./src/",
+        "outDir": "./dist/",
+        "module": "commonjs",
+        "target": "es5",
+        "sourceMap": true,
+        // react mode will emit React.createElement and output will be .js file
+        "jsx": "react",
+        // library files to be included in compilation
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
