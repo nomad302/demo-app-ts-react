@@ -78,7 +78,13 @@
             true,
             -1
         ],
-        "no-bitwise": false
+        "no-bitwise": false,
+        "eofline": true,
+        "type-literal-delimiter": true,
+        "semicolon": [
+            true,
+            "always"
+        ]
     },
     "rulesDirectory": []
 }

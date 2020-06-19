@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base ./"
+    "start": "webpack-dev-server --content-base ./",
+    "lint": "tslint src/**/*.ts{,x} --fix"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,6 @@
     "@types/react": "^16.9.36",
     "@types/react-dom": "^16.9.8",
     "awesome-typescript-loader": "^5.2.1",
-    "contentful": "^7.14.4",
     "css-loader": "^3.6.0",
     "style-loader": "^1.2.1",
     "tslint": "^6.1.2",
@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "contentful": "^7.14.4"
   },
   "bugs": {
     "url": "https://github.com/nomad302/demo-app-ts-react/issues"
