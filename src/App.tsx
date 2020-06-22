@@ -1,5 +1,6 @@
-import IHelloProps from 'interfaces/IAppProps';
 import * as React from 'react';
+
+import IHelloProps from 'interfaces/IAppProps';
 
 export default class App extends React.Component<IHelloProps>{
     public render(): JSX.Element {
