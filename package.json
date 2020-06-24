@@ -26,9 +26,11 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@contentful/rich-text-html-renderer": "^14.1.1",
+    "@contentful/rich-text-types": "^14.1.1",
+    "contentful": "^7.14.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "contentful": "^7.14.4"
+    "react-dom": "^16.13.1"
   },
   "bugs": {
     "url": "https://github.com/nomad302/demo-app-ts-react/issues"

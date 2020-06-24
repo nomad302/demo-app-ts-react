@@ -1,3 +1,5 @@
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { Document } from "@contentful/rich-text-types";
 import { Entry } from "contentful";
 import * as React from "react";
 
@@ -11,10 +13,7 @@ export interface IPost {
     description: string;
     image: Entry<IImage>;
     author: string;
-    paragraph: string;
-    paragraph2: string;
-    paragraph3: string;
-    paragraph4: string;
+    body:  Document;
     publishedDate: string;
 }
 
@@ -39,12 +38,10 @@ class Post extends React.Component<{}, IState>{
                     src={postContents.image.fields.file.url}
                     alt={postContents.image.fields.description}
                 />
-                <div>
-                    <p>{postContents.paragraph}</p>
-                    <p>{postContents.paragraph2}</p>
-                    <p>{postContents.paragraph3}</p>
-                    <p>{postContents.paragraph4}</p>
-                </div>
+                <section
+                        className="blogContent"
+                        dangerouslySetInnerHTML={{ __html: documentToHtmlString(postContents.body) }}
+                    />
             </div>
         );
     }
