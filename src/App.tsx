@@ -1,11 +1,13 @@
 import * as React from 'react';
 
-import IHelloProps from 'interfaces/IAppProps';
+import Post from 'post/post';
 
-export default class App extends React.Component<IHelloProps>{
-    public render(): JSX.Element {
-        return (
-            <h1>{this.props.greet} To {this.props.company}</h1>
-        );
-    }
-}
+import "App.css";
+
+const App: React.FunctionComponent = (): JSX.Element => (
+    <div className="app-container">
+        <Post />
+    </div>
+);
+
+export default App;
