@@ -4,7 +4,7 @@ import { Entry } from "contentful";
 import * as React from "react";
 
 import PostDataSource from "datasources/PostsDataSource";
-import { IImage } from "model/common/Iimage";
+import { IImage } from "model/common/imageModels";
 
 import "post/post.css";
 
@@ -39,9 +39,9 @@ class Post extends React.Component<{}, IState>{
                     alt={postContents.image.fields.description}
                 />
                 <section
-                        className="blogContent"
-                        dangerouslySetInnerHTML={{ __html: documentToHtmlString(postContents.body) }}
-                    />
+                    className="blogContent"
+                    dangerouslySetInnerHTML={{ __html: documentToHtmlString(postContents.body) }}
+                />
             </div>
         );
     }

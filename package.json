@@ -14,6 +14,8 @@
   "author": "\"sagar\"",
   "license": "ISC",
   "devDependencies": {
+    "@contentful/rich-text-html-renderer": "^14.1.1",
+    "@contentful/rich-text-types": "^14.1.1",
     "@types/react": "^16.9.36",
     "@types/react-dom": "^16.9.8",
     "awesome-typescript-loader": "^5.2.1",
@@ -26,8 +28,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@contentful/rich-text-html-renderer": "^14.1.1",
-    "@contentful/rich-text-types": "^14.1.1",
     "contentful": "^7.14.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
